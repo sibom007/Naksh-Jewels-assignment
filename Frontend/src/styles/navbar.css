@@ -1,0 +1,90 @@
+.navbar {
+  height: 64px;
+  padding: 0 2rem;
+  background: var(--sidebar-accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+
+  background: var(--secondary);
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.cart-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.cart-btn:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px oklch(0.2 0.01 260 / 0.12);
+}
+
+.cart-btn:active {
+  transform: scale(0.96);
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -12px;
+  left: 50px;
+
+  min-width: 18px;
+  height: 18px;
+  padding: 2px 8px;
+
+  background: var(--primary);
+  color: var(--primary-foreground);
+
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+  box-shadow: 0 4px 12px oklch(0.2 0.01 260 / 0.25);
+
+  transform: scale(0.9);
+  animation: badge-pop 0.2s ease-out;
+}
+
+@keyframes badge-pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}

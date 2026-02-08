@@ -1,0 +1,25 @@
+.state-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--font-sans);
+}
+
+.state-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.4rem;
+}
+
+.state-text {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  max-width: 320px;
+  line-height: 1.5;
+}

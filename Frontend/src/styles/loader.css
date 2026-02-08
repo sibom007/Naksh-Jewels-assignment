@@ -1,0 +1,31 @@
+/* FULL PAGE CENTERING */
+.loader-wrapper {
+  min-height: calc(100vh - 64px); /* navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+/* SPINNING ICON */
+.loader-icon {
+  color: var(--color-accent);
+  animation: loader-spin 1s linear infinite;
+}
+
+/* TEXT */
+.loader-text {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+/* KEYFRAMES */
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
